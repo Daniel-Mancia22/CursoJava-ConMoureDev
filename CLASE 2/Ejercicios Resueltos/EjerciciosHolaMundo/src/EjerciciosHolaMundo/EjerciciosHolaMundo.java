@@ -2,6 +2,8 @@ package EjerciciosHolaMundo;
 
 // @author Daniel Mancia
 
+import java.util.Scanner;
+
 public class EjerciciosHolaMundo {
 
     /**
@@ -17,7 +19,15 @@ public class EjerciciosHolaMundo {
 
         // 3. Añade un comentario sobre lo que hace cada línea del programa.
         
-        // 
+        /* 
+           package EjerciciosHolaMundo: Aca se define el paquete donde lleva su nombre que se le asigno.
+           @author Daniel Mancia: Esto es un comentario de quien realizo el proyecto.
+           public class EjerciciosHolaMundo {}: Esto define una clase sobre la cual trabajaremos.
+           @param args the command line arguments: Sirve para explicar qué hace un parámetro del método o función 
+                                                   donde aparece, en este caso args
+           public static void main(String[] args){}: Lo que hace e metodo mean es servir como punto de entrada para 
+                                                     ejecutar las insttrucciones.
+        */
 
         // 4. Crea un comentario en varias líneas.
         
@@ -33,6 +43,13 @@ public class EjerciciosHolaMundo {
         System.out.print("Hola Print sin salto de linea");
         System.out.println("Hola con salto de linea");
         
+        //System.err.println("¡Ocurrió un error!");
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Ingresa tu nombre: ");
+        String name = sc.nextLine();
+
+        
         // 7. Utiliza varios println para imprimir una frase.
         System.out.print("Hola");
         System.out.print(" Soy");
@@ -44,7 +61,7 @@ public class EjerciciosHolaMundo {
         System.out.println("?");
         
         // 8. Imprime un diseño ASCII (por ejemplo, una cara feliz usando símbolos).
-        System.out.println(". .\n u");
+        System.out.println(":-)");
 
         // 9. Intenta ejecutar el programa sin el método main y observa el error.
         System.out.println("El error que se detecta o nos da el ide en mi caso netbeans es que no se encontro el metodo principal en la \n" +
@@ -52,6 +69,9 @@ public class EjerciciosHolaMundo {
         "\n" + "public static void main(String[] args) O una clase de aplicacion JavaFX debe extender \n" + 
         "javafx.application.Application");
 
-        //10. Intenta cambiar el nombre del archivo a uno diferente del de la clase y compílalo. ¿Qué pasa?
+        //10. Intenta cambiar el nombre del archivo a uno diferente del de la clase y compílalo. ¿Qué pasa
+        
+        //error: class EjerciciosHolaMundo is public, should be declared in a file named HolaMundo.java
+        //Lo que dice es que la clase EjerciciosHolaMundo es publica y debe de declararse con el mismo nombre
     } 
 }
