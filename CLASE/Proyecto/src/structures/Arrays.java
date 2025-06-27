@@ -27,7 +27,7 @@ public class Arrays {
         
         //add
         numbers[2] = 12;
-        System.out.println(numbers[3]);
+        System.out.println(numbers[2]);
         
         System.out.println(names[2]);
         
