@@ -2,7 +2,7 @@ package oop;
 
 public class Inheritance {
     public static void main(String[] args) {
-        //Herencia -> reutilizar codigo
+        //Herencia (Es un) -> reutilizar codigo
         
         var animal = new Animal("Mi Animal");
         //animal.name = "Mi Animal";
